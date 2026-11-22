@@ -1,0 +1,444 @@
+/* Bütün sitede geçerli TEK FONT ve sıfırlama ayarları */
+    *, *::before, *::after {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Inter', sans-serif !important;
+    }
+
+    body {
+      background-color: #F5EBDD;
+      color: #3E2723;
+      line-height: 1.7;
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+    /* Üst Menü (Header) Tasarımı - Tam Orantılı */
+    .main-header {
+      background-color: #FFF9F1;
+      border-bottom: 1px solid #E6D7C5;
+      padding: 16px 40px;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .header-container {
+      max-width: 1100px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+
+    .logo-area {
+      cursor: pointer;
+    }
+
+    .logo-area h2 {
+      font-size: 20px;
+      font-weight: 700;
+      color: #5A3825;
+    }
+
+    .logo-area p {
+      font-size: 11px;
+      color: #873D45;
+      letter-spacing: 0.8px;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 24px;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: #5A3825;
+      font-size: 14.5px;
+      font-weight: 600;
+      transition: 0.2s;
+    }
+
+    .nav-links a:hover, .nav-links a.active {
+      color: #873D45;
+    }
+
+    .header-actions {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .search-input {
+      padding: 7px 12px;
+      border: 1px solid #E6D7C5;
+      border-radius: 6px;
+      background-color: #F5EBDD;
+      font-size: 13px;
+      color: #5A3825;
+      outline: none;
+      width: 130px;
+      transition: 0.3s;
+    }
+
+    .search-input:focus {
+      width: 160px;
+      border-color: #873D45;
+    }
+
+    .random-btn {
+      background-color: #873D45;
+      color: white;
+      border: none;
+      padding: 7px 12px;
+      border-radius: 6px;
+      font-size: 13px;
+      font-weight: 500;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .random-btn:hover {
+      background-color: #5A3825;
+    }
+
+    .theme-btn {
+      background: none;
+      border: 1px solid #E6D7C5;
+      border-radius: 6px;
+      padding: 6px 10px;
+      cursor: pointer;
+      font-size: 14px;
+      transition: 0.3s;
+    }
+
+    .theme-btn:hover {
+      background-color: #E6D7C5;
+    }
+
+    /* Kahraman (Hero) Alanı - Daha Derli Toplu */
+    .hero {
+      background-color: #5A3825;
+      color: #F5EBDD;
+      text-align: center;
+      padding: 55px 20px 45px 20px;
+    }
+
+    .small-title {
+      color: #D4AF37;
+      font-size: 12px;
+      letter-spacing: 2.5px;
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+
+    .hero h1 {
+      font-size: 38px;
+      font-weight: 800;
+      margin-bottom: 12px;
+      letter-spacing: -0.3px;
+    }
+
+    .hero-text {
+      max-width: 500px;
+      margin: 0 auto;
+      font-size: 15.5px;
+      color: #F5EBDD;
+      opacity: 0.9;
+    }
+
+    /* Altın Sarısı Bölüm Çizgisi - Mükemmel Orantı */
+    .golden-divider {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      margin: 30px auto;
+      max-width: 250px;
+    }
+
+    .golden-divider::before,
+    .golden-divider::after {
+      content: "";
+      flex: 1;
+      border-bottom: 1.5px solid #D4AF37;
+      margin: 0 12px;
+    }
+
+    .golden-divider span {
+      color: #D4AF37;
+      font-size: 16px;
+    }
+
+    /* Ana İçerik Konteynerı - Her şey tam ortada ve eşit mesafede */
+    main {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 10px 20px 50px 20px;
+    }
+
+    .section-heading {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .section-heading h2 {
+      font-size: 28px;
+      font-weight: 700;
+      margin-bottom: 6px;
+      color: #4A2E1B;
+    }
+
+    .section-heading p {
+      color: #806A5A;
+      font-size: 14.5px;
+    }
+
+    /* Masal Kartları Grid Sistemi */
+    .story-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 24px;
+    }
+
+    .story-card {
+      background-color: #FFF9F1;
+      border: 1px solid #E6D7C5;
+      border-radius: 10px;
+      padding: 24px;
+      transition: 0.3s;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .story-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 6px 18px rgba(90, 56, 37, 0.1);
+      border-color: #D4AF37;
+    }
+
+    .story-number {
+      color: #D4AF37;
+      font-size: 11.5px;
+      letter-spacing: 1.5px;
+      font-weight: 700;
+    }
+
+    .story-card h3 {
+      font-size: 20px;
+      font-weight: 700;
+      margin: 10px 0 8px 0;
+      color: #4A2E1B;
+    }
+
+    .story-card p {
+      color: #6D5446;
+      font-size: 14.5px;
+      margin-bottom: 18px;
+      line-height: 1.6;
+    }
+
+    .read-button {
+      background-color: #873D45;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      padding: 10px 18px;
+      font-size: 13.5px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: 0.3s;
+      align-self: flex-start;
+    }
+
+    .read-button:hover {
+      background-color: #5A3825;
+    }
+
+    /* Sayfa ve Okuma Alanları */
+    .hidden {
+      display: none !important;
+    }
+
+    .reading-page, .page-section {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .back-button {
+      background: none;
+      border: none;
+      color: #873D45;
+      font-size: 14px;
+      font-weight: 600;
+      cursor: pointer;
+      margin-bottom: 24px;
+    }
+
+    .back-button:hover {
+      text-decoration: underline;
+    }
+
+    .story-content {
+      background-color: #FFF9F1;
+      border: 1px solid #E6D7C5;
+      border-radius: 10px;
+      padding: 38px;
+    }
+
+    .story-content h2 {
+      font-size: 28px;
+      font-weight: 700;
+      margin: 8px 0 16px 0;
+      color: #4A2E1B;
+    }
+
+    .story-divider {
+      width: 55px;
+      height: 2.5px;
+      background-color: #D4AF37;
+      margin-bottom: 24px;
+    }
+
+    .story-text p {
+      font-size: 16px;
+      line-height: 1.8;
+      margin-bottom: 20px;
+      text-align: left;
+      color: #3E2723;
+    }
+
+    /* Masal Altı Navigasyon Butonları */
+    .story-navigation {
+      display: flex;
+      justify-content: space-between;
+      gap: 15px;
+      margin-top: 35px;
+      padding-top: 20px;
+      border-top: 1px solid #E6D7C5;
+    }
+
+    .nav-story-btn {
+      background-color: #873D45;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      padding: 11px 20px;
+      font-size: 13.5px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .nav-story-btn:hover:not(:disabled) {
+      background-color: #5A3825;
+    }
+
+    .nav-story-btn:disabled {
+      background-color: #D3C4B3;
+      color: #8A7B6C;
+      cursor: not-allowed;
+      opacity: 0.6;
+    }
+
+    /* Alt Alan (Footer) */
+    footer {
+      background-color: #5A3825;
+      color: #F5EBDD;
+      text-align: center;
+      padding: 22px;
+      margin-top: 40px;
+    }
+
+    footer p {
+      font-size: 14px;
+      margin-bottom: 4px;
+    }
+
+    footer span {
+      font-size: 12.5px;
+      color: #D4AF37;
+    }
+
+    /* Gece Modu (Dark Mode) Renkleri */
+    body.dark-mode {
+      background-color: #1a1512;
+      color: #E7BFA6;
+    }
+
+    body.dark-mode .main-header {
+      background-color: #261f1b;
+      border-bottom-color: #3d312a;
+    }
+
+    body.dark-mode .logo-area h2, 
+    body.dark-mode .nav-links a,
+    body.dark-mode .section-heading h2,
+    body.dark-mode .story-card h3,
+    body.dark-mode .story-content h2 {
+      color: #E7BFA6;
+    }
+
+    body.dark-mode .search-input {
+      background-color: #1a1512;
+      color: #E7BFA6;
+      border-color: #3d312a;
+    }
+
+    body.dark-mode .story-card, 
+    body.dark-mode .story-content {
+      background-color: #261f1b;
+      border-color: #3d312a;
+      color: #E7BFA6;
+    }
+
+    body.dark-mode .story-text p {
+      color: #E7BFA6;
+    }
+
+    body.dark-mode .story-card p, 
+    body.dark-mode .section-heading p {
+      color: #b59b87;
+    }
+
+    body.dark-mode .story-navigation {
+      border-top-color: #3d312a;
+    }
+
+    body.dark-mode .nav-story-btn:disabled {
+      background-color: #3a3028;
+      color: #635447;
+    }
+
+    /* Responsive / Telefon Görünümü */
+    @media (max-width: 750px) {
+      .main-header {
+        padding: 14px 20px;
+      }
+      .header-container {
+        flex-direction: column;
+        align-items: center;
+      }
+      .nav-links {
+        gap: 15px;
+      }
+      .hero {
+        padding: 40px 15px;
+      }
+      .hero h1 {
+        font-size: 30px;
+      }
+      .story-grid {
+        grid-template-columns: 1fr;
+      }
+      .story-navigation {
+        flex-direction: column;
+      }
+      .nav-story-btn {
+        width: 100%;
+      }
+    }

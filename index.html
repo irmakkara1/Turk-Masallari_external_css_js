@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Türk Masalları</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Üst Menü (Header) Alanı -->
+  <header class="main-header">
+    <div class="header-container">
+      <div class="logo-area" id="logoHome">
+        <h2>Türk Masalları</h2>
+        <p>masallara dair her şey...</p>
+      </div>
+
+      <nav class="nav-links">
+        <a href="#" id="navHome" class="active">Ana Sayfa</a>
+        <a href="#" id="navAbout">Hakkımızda</a>
+        <a href="#" id="navContact">İletişim</a>
+      </nav>
+
+      <div class="header-actions">
+        <input type="text" id="searchInput" placeholder="Masal ara..." class="search-input">
+        <button id="randomStoryBtn" class="random-btn">🎲 Rastgele</button>
+        <button id="themeToggleBtn" class="theme-btn" title="Gece/Gündüz Modu">🌙</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Kahraman (Hero) Alanı -->
+  <section class="hero">
+    <p class="small-title">BİR VARMIŞ BİR YOKMUŞ...</p>
+    <h1>Türk Masalları</h1>
+    <p class="hero-text">
+      Hayal gücünün kapılarını arala, birbirinden güzel
+      Türk masallarını keşfet.
+    </p>
+  </section>
+
+  <!-- Altın Sarısı Süslemeli Çizgi -->
+  <div class="golden-divider">
+    <span>✦</span>
+  </div>
+
+  <main>
+    <!-- Ana Sayfa / Masal Listesi -->
+    <section id="homePage">
+      <div class="section-heading">
+        <h2>Masallarımız</h2>
+        <p>Bir masal seç ve kendi hikâyene başla.</p>
+      </div>
+
+      <div id="storyList" class="story-grid"></div>
+    </section>
+
+    <!-- Hakkımızda Sayfası -->
+    <section id="aboutPage" class="page-section hidden">
+      <div class="story-content">
+        <p class="small-title">PROJE HAKKINDA</p>
+        <h2>Biz Kimiz?</h2>
+        <div class="story-divider"></div>
+        <div class="story-text">
+          <p>Bu proje, geleneksel Türk masal kültürünü dijital dünyada yaşatmak, yeni nesillere aktarmak ve interaktif bir web deneyimi sunmak amacıyla titizlikle hazırlanmıştır.</p>
+          <p>Tüm masallar özgün diline ve kaynaklara sadık kalınarak derlenmiş; modern web teknolojileri ve kullanıcı dostu arayüz tasarımıyla zenginleştirilmiştir.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- İletişim Sayfası -->
+    <section id="contactPage" class="page-section hidden">
+      <div class="story-content">
+        <p class="small-title">İLETİŞİM</p>
+        <h2>Bizimle İletişime Geçin</h2>
+        <div class="story-divider"></div>
+        <div class="story-text">
+          <p>Görüş, öneri ve eklemek istediğiniz masallar için bizimle aşağıdaki kanallar üzerinden bağlantı kurabilirsiniz.</p>
+          <p><strong>E-posta:</strong> iletisim@turkmasallari.derlemesi<br><strong>Konum:</strong> İstanbul, Türkiye</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Masal Okuma Alanı -->
+    <section id="readingPage" class="reading-page hidden">
+      <button id="backButton" class="back-button">
+        ← Tüm Masallara Dön
+      </button>
+
+      <article class="story-content">
+        <p class="small-title">TÜRK MASALLARI DERLEMESİ</p>
+        <h2 id="storyTitle"></h2>
+        <div class="story-divider"></div>
+        <div id="storyText" class="story-text"></div>
+
+        <!-- Önceki / Sonraki Masal Butonları -->
+        <div class="story-navigation">
+          <button id="prevStoryBtn" class="nav-story-btn">← Önceki Masal</button>
+          <button id="nextStoryBtn" class="nav-story-btn">Sonraki Masal →</button>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <footer>
+    <p>Türk Masalları Derlemesi</p>
+    <span>Bir varmış, bir yokmuş... ✦</span>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
